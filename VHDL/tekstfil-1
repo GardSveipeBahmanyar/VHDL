@@ -1,0 +1,24 @@
+vsim -voptargs=+acc=bcglnprst+tb_cla_block work.tb_cla_block
+# vsim -voptargs="+acc=bcglnprst+tb_cla_block" work.tb_cla_block 
+# Start time: 18:17:14 on Sep 27,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading std.env(body)
+# Loading work.tb_cla_block(behavioral)#1
+run -all
+# ** Note: Ferdig!
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cla_block
+# Break in Process line__42 at /home/gardsb/M-drive/pc/Dokumenter/in2060/tb_cla_block.vhd line 88
+add wave -position insertpoint  \
+sim:/tb_cla_block/tb_a \
+sim:/tb_cla_block/tb_b \
+sim:/tb_cla_block/tb_s \
+sim:/tb_cla_block/tb_cin \
+sim:/tb_cla_block/tb_cout
+run -all
+# ** Note: Ferdig!
+#    Time: 260 ns  Iteration: 0  Instance: /tb_cla_block
+# Break in Process line__42 at /home/gardsb/M-drive/pc/Dokumenter/in2060/tb_cla_block.vhd line 88
+
